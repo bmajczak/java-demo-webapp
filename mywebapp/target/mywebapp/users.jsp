@@ -23,10 +23,10 @@
         <% 
        
         // Odebranie listy użytkowników przekazanej jako atrybut "users1"
-        ArrayList<User> users1 = (ArrayList<User>) request.getAttribute("users");
+        ArrayList<User> users = (ArrayList<User>) request.getAttribute("users");
         if (users1 != null) {
             // Jeśli lista użytkowników nie jest pusta, iteruj po niej
-            for (User user : users1) {
+            for (User user : users) {
     %>
     <tr>
         <td><%= user.getId() %></td>
