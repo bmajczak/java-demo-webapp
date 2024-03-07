@@ -22,9 +22,9 @@
        
         <% 
        
-        // Odebranie listy użytkowników przekazanej jako atrybut "users1"
+        // Odebranie listy użytkowników przekazanej jako atrybut "users"
         ArrayList<User> users = (ArrayList<User>) request.getAttribute("users");
-        if (users1 != null) {
+        if (users != null) {
             // Jeśli lista użytkowników nie jest pusta, iteruj po niej
             for (User user : users) {
     %>
